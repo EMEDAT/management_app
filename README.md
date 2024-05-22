@@ -1,3 +1,19 @@
+# PUFFLES TASK MANAGER
+
+This app lets you keep up to date with your tasks.
+
+It allows it's users to do the following:
+
+1) Input their with a description of task.
+
+2) Toggle task when completed or not completed to allow for appropraite seperation of activity.
+
+3) Allows users to unuseful tasks and its description
+
+4) User data is vailable even upon reload of page to mitigate data loss. 
+
+# ENJOY MANAGING YOUR DAILY TASK
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

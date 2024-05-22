@@ -18,8 +18,8 @@ const taskSlice = createSlice({
       reducer: (state, action: PayloadAction<Task>) => {
         state.push(action.payload);
       },
-      prepare: (title: string, description: string = '') => { // add a description parameter
-        return { payload: { id: uuidv4(), title, completed: false, description } }; // include description in the payload
+      prepare: (title: string, description: string = '') => {
+        return { payload: { id: uuidv4(), title, completed: false, description } };
       },
     },
     loadTask: (state, action: PayloadAction<Task>) => {

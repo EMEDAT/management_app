@@ -1,8 +1,7 @@
 import { useSelector } from 'react-redux';
-import { RootState } from '../../containers/store';
 import TaskItem from '../TaskItem/TaskItem';
-import { selectTasks } from '../../containers/taskSlice'; // replace with the actual path to selectTasks
-import { Task } from '../../containers/types'; // replace with the actual path to the Task type
+import { selectTasks } from '../../containers/taskSlice';
+import { Task } from '../../containers/types';
 
 const TaskList: React.FC = () => {
   const tasks: Task[] = useSelector(selectTasks);

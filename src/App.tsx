@@ -10,8 +10,8 @@ import  images  from './constants/images';
 
 const App: React.FC = () => {
   const dispatch = useDispatch();
-  const tasks = useSelector((state: RootState) => state.tasks); // define tasks
-
+  const tasks = useSelector((state: RootState) => state.tasks);
+  
   useEffect(() => {
     const savedTasks = JSON.parse(localStorage.getItem('tasks') || '[]');
     const uniqueTasks = Array.from(new Set(savedTasks.map((task: Task) => task.id)))
@@ -33,7 +33,7 @@ const App: React.FC = () => {
         <img src={images.PUFFLES} alt="Logo" className="h-12 w-auto hover:scale-110 transition-transform duration-200" />
       </div>
       <div className='header'>
-        <h1 className='text-xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-center text-purple-700 font-extrabold tracking-wide shadow-text'>Puffles Task Manager</h1>
+        <h1 className='text-4xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-center text-purple-700 font-extrabold tracking-wide shadow-text'>Puffles Task Manager</h1>
       </div>
       <div className='bottom'>
       <AddTask />

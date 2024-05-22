@@ -5,7 +5,7 @@ import { addTask } from '../../containers/taskSlice';
 const TaskForm: React.FC = () => {
   const dispatch = useDispatch();
   const [title, setTitle] = useState('');
-  const [description, setDescription] = useState(''); // add this line
+  const [description, setDescription] = useState('');
 
   const submitForm = (e: React.FormEvent) => {
     e.preventDefault();
